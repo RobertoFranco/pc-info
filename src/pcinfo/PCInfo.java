@@ -36,7 +36,7 @@ public class PCInfo {
                 });
                 
                 dialog.setIPAddress(localHost.getHostAddress());
-                dialog.setHostname(localHost.getHostName());
+                dialog.setHostname(localHost.getCanonicalHostName());
                 dialog.setUsername(System.getProperty("user.name"));
                 dialog.setLocationRelativeTo(null);
                 dialog.setVisible(true);
